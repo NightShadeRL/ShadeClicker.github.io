@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Banana Clicker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="top-bar">
+    <button id="toggleTheme" title="Let there be light! Or Darkness.">🌙 Theme</button>
+    <button id="prestigeBtn" title="Coming Soon! Maybe...">⭐ Prestige</button>
+  </div>
+
+  <h1>🍌 Banana Clicker 🍌</h1>
+  <div>Bananas: <span id="bananaCount">0</span></div>
+  <div id="banana">🍌</div>
+
+  <div id="progressContainer">
+    <div id="progressFill"></div>
+    <div class="progress-tooltip" id="progressTooltip">Next Upgrade: 0 Bananas</div>
+  </div>
+    
+
+  <div class="upgrade-panel">
+    <div class="upgrade" id="upgrade-peeler">
+      <span class="icon">🔪</span>
+      <span class="info">
+        <strong>Banana Peeler</strong><br>
+        <span>+1/sec</span><br>
+        Owned: <span id="peelerCount">0</span><br>
+        Cost: <span id="peelerCost">10</span> 🍌
+      </span>
+      <button id="buyPeeler">Buy</button>
+    </div>
+    <div class="upgrade" id="upgrade-tree">
+      <span class="icon">🌴</span>
+      <span class="info">
+        <strong>Banana Tree</strong><br>
+        <span>+5/sec</span><br>
+        Owned: <span id="treeCount">0</span><br>
+        Cost: <span id="treeCost">100</span> 🍌
+      </span>
+      <button id="buyTree">Buy</button>
+    </div>
+    <div class="upgrade" id="upgrade-farm">
+      <span class="icon">🏡</span>
+      <span class="info">
+        <strong>Banana Farm</strong><br>
+        <span>+20/sec</span><br>
+        Owned: <span id="farmCount">0</span><br>
+        Cost: <span id="farmCost">1000</span> 🍌
+      </span>
+      <button id="buyFarm">Buy</button>
+    </div>
+    <div class="upgrade" id="upgrade-factory">
+      <span class="icon">🏭</span>
+      <span class="info">
+        <strong>Banana Factory</strong><br>
+        <span>+100/sec</span><br>
+        Owned: <span id="factoryCount">0</span><br>
+        Cost: <span id="factoryCost">10000</span> 🍌
+      </span>
+      <button id="buyFactory">Buy</button>
+    </div>
+    <div class="upgrade" id="upgrade-god">
+      <span class="icon">🙏</span>
+      <span class="info">
+        <strong>Banana God</strong><br>
+        <span>+1000/sec</span><br>
+        Owned: <span id="godCount">0</span><br>
+        Cost: <span id="godCost">100000</span> 🍌
+      </span>
+      <button id="buyGod">Buy</button>
+    </div>
+  </div>
+
+  <div class="settings">
+    <button id="resetSave">Reset Save</button>
+  </div>
+
+  <div id="resetOverlay" class="reset-overlay hidden">
+    <div class="reset-text">Resetting...</div>
+  </div>
+
+  <div id="confettiContainer"></div>
+
+  <script src="main.js"></script>
+  <script src="reward.js"></script>
+
+</body>
+</html>
